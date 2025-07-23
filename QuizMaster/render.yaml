@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: banik-quiz
+    env: node
+    plan: free
+    buildCommand: pwd && ls -la && find . -name "package.json" && npm install && npm run build
+    startCommand: npm start
